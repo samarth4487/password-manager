@@ -23,6 +23,12 @@ var argv = require('yargs')
           alias: 'p',
           description: 'Account password (eg: mypassword)',
           type: 'string'
+        },
+        master-password: {
+          demand: true,
+          alias: 'm',
+          description: 'Master Password for accessing the password wallet',
+          type: 'string'
         }
       }).help('help');
     })
@@ -32,6 +38,12 @@ var argv = require('yargs')
           demand: true,
           alias: 'n',
           description: 'Account name (eg: Twitter, Facebook)',
+          type: 'string'
+        },
+        master-password: {
+          demand: true,
+          alias: 'm',
+          description: 'Master Password for accessing the password wallet',
           type: 'string'
         }
       }).help('help');
